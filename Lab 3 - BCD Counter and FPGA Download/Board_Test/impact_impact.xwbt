@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\Bo\Dropbox\School\Spring 2018\CDA 4203L Computer System Design Lab\Lab 3 - BCD Counter and FPGA Download\Board_Test\impact.xsl
+OUTFILE=C:\Users\Bo\Dropbox\School\Spring 2018\CDA 4203L Computer System Design Lab\Lab 3 - BCD Counter and FPGA Download\Board_Test\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=C:\Users\Bo\Dropbox\School\Spring 2018\CDA 4203L Computer System Design Lab\Lab 3 - BCD Counter and FPGA Download\Board_Test
+LICENSE=iMPACT
+USER_INFO=iMPACT
