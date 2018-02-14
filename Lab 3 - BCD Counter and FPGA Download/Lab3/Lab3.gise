@@ -39,7 +39,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="bcd_count_7_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="bcd_count_7_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="bcd_count_7_ngdbuild.xrpt"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bcd_count_7_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bcd_count_7_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="bcd_count_7_xst.xrpt"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -56,6 +56,10 @@
     <transform xil_pn:end_ts="1518642349" xil_pn:in_ck="289016166944765340" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1518642348">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="bcd_counter.v"/>
       <outfile xil_pn:name="binary_bcd.v"/>
       <outfile xil_pn:name="counter.v"/>
@@ -89,12 +93,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1518642168" xil_pn:in_ck="289016166944765340" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="6494547411800834147" xil_pn:start_ts="1518642158">
+    <transform xil_pn:end_ts="1518643397" xil_pn:in_ck="289016166944765340" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="6494547411800834147" xil_pn:start_ts="1518643387">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="bcd_count_7.lso"/>
       <outfile xil_pn:name="bcd_count_7.ngc"/>
@@ -103,6 +105,7 @@
       <outfile xil_pn:name="bcd_count_7.stx"/>
       <outfile xil_pn:name="bcd_count_7.syr"/>
       <outfile xil_pn:name="bcd_count_7.xst"/>
+      <outfile xil_pn:name="bcd_count_7_stx_beh.prj"/>
       <outfile xil_pn:name="bcd_count_7_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
@@ -111,21 +114,19 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1518642175" xil_pn:in_ck="2356749458830641165" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5703061439435837589" xil_pn:start_ts="1518642168">
+    <transform xil_pn:end_ts="1518643404" xil_pn:in_ck="2356749458830641165" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="5703061439435837589" xil_pn:start_ts="1518643397">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="bcd_count_7.bld"/>
       <outfile xil_pn:name="bcd_count_7.ngd"/>
       <outfile xil_pn:name="bcd_count_7_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1518642181" xil_pn:in_ck="2356749458830641166" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-8453867640889462296" xil_pn:start_ts="1518642175">
+    <transform xil_pn:end_ts="1518643409" xil_pn:in_ck="2356749458830641166" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-8453867640889462296" xil_pn:start_ts="1518643404">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="bcd_count_7_map.map"/>
       <outfile xil_pn:name="bcd_count_7_map.mrp"/>
