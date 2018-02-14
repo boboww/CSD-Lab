@@ -14,14 +14,14 @@ module bcd_count_7(max_count, clk, run, digit_1, digit_2);
   // TODO: Wires and registers for interconnect
 
   // Programmable 7-bit counter module
-  prog_count_7 counter(.max_count(<FILL_IN>), 
-			.reset(<FILL_IN>), 
-			.clk(<FILL_IN>), 
-			.count_out(<FILL_IN>));
+//  prog_count_7 counter(.max_count(<FILL_IN>), 
+//			.reset(<FILL_IN>), 
+//			.clk(<FILL_IN>), 
+//			.count_out(<FILL_IN>));
 
   // Binary-to-BCD Converter
-  binary_bcd_2 bcd_converter(.bin_in(<FILL_IN>),
-			      .digit_1(<FILL_IN>), 
-			      .digit_2(<FILL_IN>));
+//  binary_bcd_2 bcd_converter(.bin_in(<FILL_IN>),
+//			      .digit_1(<FILL_IN>), 
+//			      .digit_2(<FILL_IN>));
 
 endmodule
