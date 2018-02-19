@@ -1,23 +1,3 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    13:09:54 01/20/2015 
-// Design Name: 
-// Module Name:    board_test 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
 module board_test( leds, switches, btn_up, btn_dwn, btn_lft, btn_rt, btn_ctr, clk );
 
 output reg [7:0] leds;
