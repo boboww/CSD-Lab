@@ -1,7 +1,7 @@
 module Lab4(
-	input quarter,
-	input nickel,
+	input quarter,	
 	input dime,
+	input nickel,
 	input soda,
 	input diet,
 	input clk,
@@ -13,29 +13,35 @@ module Lab4(
 reg [2:0] CurrentState;
 reg [2:0] NextState;
 
-integer i;
+integer i = 1;
 
-localparam s0 = 0;
-localparam s5 = 0;
-localparam s10 = 0;
-localparam s15 = 0;
-localparam s20 = 0;
-localparam s25 = 0;
-localparam s30 = 0;
-localparam s35 = 0;
-localparam s40 = 0;
-localparam s45 = 0;
-localparam s50 = 0;
-localparam s55 = 0;
-localparam s60 = 0;
-localparam s65 = 0;
+parameter s0 = 0;
+parameter s5 = 0;
+parameter s10 = 0;
+parameter s15 = 0;
+parameter s20 = 0;
+parameter s25 = 0;
+parameter s30 = 0;
+parameter s35 = 0;
+parameter s40 = 0;
+parameter s45 = 0;
+parameter s50 = 0;
+parameter s55 = 0;
+parameter s60 = 0;
+parameter s65 = 0;
 
 always @(posedge clk) begin
+	GiveSoda = 0;
+	GiveDiet = 0;
+	Change = 0;
+	
+	if(i == 1) begin
+		NextState = s0;
+		i = 0;
+	end	
+	
 	case (NextState)
 		s0 : begin
-			GiveSoda = 0;
-			GiveDiet = 0;
-			Change = 0;
 			if (quarter) begin
 				NextState = s25;
 			end if(dime) begin
@@ -126,23 +132,31 @@ always @(posedge clk) begin
 		end
 			
 		s45 : begin
-		
+			if (soda) begin
+				GiveSoda = 1;
+			end if (diet) begin
+				GiveDiet = 1;
+			end
 		end
 			
 		s50 : begin
-		
+			Change = 1;
+			NextState = s45;
 		end
 			
 		s55 : begin
-		
+			Change = 1;
+			NextState = s50;
 		end
 
 		s60 : begin
-		
+			Change = 1;
+			NextState = s55;
 		end 
 		
 		s65 : begin
-		
+			Change = 1;
+			NextState = s60;
 		end 
 
 	endcase

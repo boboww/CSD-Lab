@@ -42,24 +42,42 @@ module Lab4_test;
 
 		// Wait 100 ns for global reset to finish
 		#100;
+		nickel = 1;
 		
-		#100;
+		#50;
+		nickel = 0;
 		
-		#100;
+		#50;
+		quarter = 1;
 		
-		#100;
+		#50;
+		quarter = 0;
 		
-		#100;
+		#50;
+		dime = 1;
 		
-		#100;
+		#50;
+		dime = 0;
 		
-		#100;
+		#50;
+		quarter = 1;
 		
-		#100;
+		#50;
+		quarter = 0;
 		
-		#100;
+		#50;
+		soda = 1;
 		
-		#100;
+		#50;
+		soda = 0;
+		
+		#50;
+		
+		#50;
+		
+		#50;
+		
+		#50;
 
 	end
       
