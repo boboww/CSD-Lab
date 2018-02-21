@@ -31,6 +31,11 @@ parameter s60 = 0;
 parameter s65 = 0;
 
 always @(posedge clk) begin
+	CurrentState <= NextState;
+end
+
+always @(*) begin
+	NextState = CurrentState;
 	GiveSoda = 0;
 	GiveDiet = 0;
 	Change = 0;
@@ -40,7 +45,7 @@ always @(posedge clk) begin
 		i = 0;
 	end	
 	
-	case (NextState)
+	case (CurrentState)
 		s0 : begin
 			if (quarter) begin
 				NextState = s25;
@@ -48,7 +53,8 @@ always @(posedge clk) begin
 				NextState = s10;
 			end if(nickel) begin
 				NextState = s5;
-			end 
+			end else 
+				NextState = 0;
 		end
 			
 		s5 : begin
