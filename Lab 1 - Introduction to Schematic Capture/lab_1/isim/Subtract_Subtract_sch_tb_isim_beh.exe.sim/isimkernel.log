@@ -1,0 +1,29 @@
+Command line:
+   Subtract_Subtract_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  52412
+
+Wed Jan 24 16:18:11 2018
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 876.581 Meg
+
+ Total Signals          : 133
+ Total Nets             : 46
+ Total Signal Drivers   : 32
+ Total Blocks           : 32
+ Total Primitive Blocks : 25
+ Total Processes        : 34
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 135
+Total Line Count : 24
+
+ Total Simulation Time: 0.40625 sec
+
+ Current Memory Usage: 876.581 Meg
+
+Wed Jan 24 16:18:30 2018
+

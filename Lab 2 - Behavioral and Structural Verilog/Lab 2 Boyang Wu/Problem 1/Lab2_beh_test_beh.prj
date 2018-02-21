@@ -1,0 +1,3 @@
+verilog work "Lab2_beh.v"
+verilog work "Lab2_beh_test.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

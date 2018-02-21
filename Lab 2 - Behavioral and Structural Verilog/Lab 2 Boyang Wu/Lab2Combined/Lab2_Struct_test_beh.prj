@@ -1,0 +1,8 @@
+verilog work "mux_21_4bit.v"
+verilog work "inverter.v"
+verilog work "mux_41_4bit.v"
+verilog work "inverter4bit.v"
+verilog work "fulladd4bit.v"
+verilog work "Lab2_Struct.v"
+verilog work "Lab2_Struct_test.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

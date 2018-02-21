@@ -1,0 +1,7 @@
+verilog work "fulladd.vf"
+verilog work "fulladd4.vf"
+verilog work "Subtract.vf"
+verilog work "Mux4bit.vf"
+verilog work "inverter4bit.vf"
+verilog work "Double.vf"
+verilog work "Lab1.vf"

@@ -1,0 +1,4 @@
+verilog work "inverter.v"
+verilog work "and_21.v"
+verilog work "nand_21.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

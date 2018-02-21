@@ -1,0 +1,317 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab1.vf
+// /___/   /\     Timestamp : 01/25/2018 15:07:35
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/Lab 1 - Introduction to Schematic Capture/lab_1/Lab1.vf" -w "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/Lab 1 - Introduction to Schematic Capture/lab_1/Lab1.sch"
+//Design Name: Lab1
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module inverter4bit_MUSER_Lab1(A_in, 
+                               A_out);
+
+    input [3:0] A_in;
+   output [3:0] A_out;
+   
+   
+   INV  XLXI_1 (.I(A_in[3]), 
+               .O(A_out[3]));
+   INV  XLXI_2 (.I(A_in[2]), 
+               .O(A_out[2]));
+   INV  XLXI_3 (.I(A_in[1]), 
+               .O(A_out[1]));
+   INV  XLXI_4 (.I(A_in[0]), 
+               .O(A_out[0]));
+endmodule
+`timescale 1ns / 1ps
+
+module Mux4to1_MUSER_Lab1(A_in, 
+                          B_in, 
+                          C_in, 
+                          D_in, 
+                          S0, 
+                          S1, 
+                          Mux_out);
+
+    input A_in;
+    input B_in;
+    input C_in;
+    input D_in;
+    input S0;
+    input S1;
+   output Mux_out;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_9;
+   wire XLXN_10;
+   
+   AND3  XLXI_1 (.I0(XLXN_10), 
+                .I1(XLXN_9), 
+                .I2(A_in), 
+                .O(XLXN_1));
+   AND3  XLXI_2 (.I0(S0), 
+                .I1(XLXN_10), 
+                .I2(B_in), 
+                .O(XLXN_2));
+   AND3  XLXI_3 (.I0(S1), 
+                .I1(XLXN_9), 
+                .I2(C_in), 
+                .O(XLXN_3));
+   AND3  XLXI_4 (.I0(S1), 
+                .I1(S0), 
+                .I2(D_in), 
+                .O(XLXN_4));
+   OR4  XLXI_5 (.I0(XLXN_4), 
+               .I1(XLXN_3), 
+               .I2(XLXN_2), 
+               .I3(XLXN_1), 
+               .O(Mux_out));
+   INV  XLXI_7 (.I(S0), 
+               .O(XLXN_9));
+   INV  XLXI_8 (.I(S1), 
+               .O(XLXN_10));
+endmodule
+`timescale 1ns / 1ps
+
+module Mux4bit_MUSER_Lab1(A_in, 
+                          B_in, 
+                          C_in, 
+                          D_in, 
+                          S0_in, 
+                          S1_in, 
+                          Mux_out);
+
+    input [3:0] A_in;
+    input [3:0] B_in;
+    input [3:0] C_in;
+    input [3:0] D_in;
+    input S0_in;
+    input S1_in;
+   output [3:0] Mux_out;
+   
+   
+   Mux4to1_MUSER_Lab1  XLXI_1 (.A_in(A_in[3]), 
+                              .B_in(B_in[3]), 
+                              .C_in(C_in[3]), 
+                              .D_in(D_in[3]), 
+                              .S0(S0_in), 
+                              .S1(S1_in), 
+                              .Mux_out(Mux_out[3]));
+   Mux4to1_MUSER_Lab1  XLXI_3 (.A_in(A_in[2]), 
+                              .B_in(B_in[2]), 
+                              .C_in(C_in[2]), 
+                              .D_in(D_in[2]), 
+                              .S0(S0_in), 
+                              .S1(S1_in), 
+                              .Mux_out(Mux_out[2]));
+   Mux4to1_MUSER_Lab1  XLXI_4 (.A_in(A_in[1]), 
+                              .B_in(B_in[1]), 
+                              .C_in(C_in[1]), 
+                              .D_in(D_in[1]), 
+                              .S0(S0_in), 
+                              .S1(S1_in), 
+                              .Mux_out(Mux_out[1]));
+   Mux4to1_MUSER_Lab1  XLXI_5 (.A_in(A_in[0]), 
+                              .B_in(B_in[0]), 
+                              .C_in(C_in[0]), 
+                              .D_in(D_in[0]), 
+                              .S0(S0_in), 
+                              .S1(S1_in), 
+                              .Mux_out(Mux_out[0]));
+endmodule
+`timescale 1ns / 1ps
+
+module fulladd_MUSER_Lab1(A_in, 
+                          B_in, 
+                          C_in, 
+                          C_out, 
+                          S_out);
+
+    input A_in;
+    input B_in;
+    input C_in;
+   output C_out;
+   output S_out;
+   
+   wire XLXN_1;
+   wire XLXN_12;
+   wire XLXN_13;
+   
+   AND2  XLXI_1 (.I0(C_in), 
+                .I1(XLXN_1), 
+                .O(XLXN_12));
+   AND2  XLXI_2 (.I0(B_in), 
+                .I1(A_in), 
+                .O(XLXN_13));
+   OR2  XLXI_3 (.I0(XLXN_13), 
+               .I1(XLXN_12), 
+               .O(C_out));
+   XOR2  XLXI_4 (.I0(C_in), 
+                .I1(XLXN_1), 
+                .O(S_out));
+   XOR2  XLXI_5 (.I0(B_in), 
+                .I1(A_in), 
+                .O(XLXN_1));
+endmodule
+`timescale 1ns / 1ps
+
+module fulladd4_MUSER_Lab1(A_in, 
+                           B_in, 
+                           C_in, 
+                           C_out, 
+                           S_out);
+
+    input [3:0] A_in;
+    input [3:0] B_in;
+    input C_in;
+   output C_out;
+   output [3:0] S_out;
+   
+   wire XLXN_17;
+   wire XLXN_18;
+   wire XLXN_19;
+   
+   fulladd_MUSER_Lab1  XLXI_6 (.A_in(A_in[0]), 
+                              .B_in(B_in[0]), 
+                              .C_in(C_in), 
+                              .C_out(XLXN_19), 
+                              .S_out(S_out[0]));
+   fulladd_MUSER_Lab1  XLXI_7 (.A_in(A_in[1]), 
+                              .B_in(B_in[1]), 
+                              .C_in(XLXN_19), 
+                              .C_out(XLXN_18), 
+                              .S_out(S_out[1]));
+   fulladd_MUSER_Lab1  XLXI_8 (.A_in(A_in[2]), 
+                              .B_in(B_in[2]), 
+                              .C_in(XLXN_18), 
+                              .C_out(XLXN_17), 
+                              .S_out(S_out[2]));
+   fulladd_MUSER_Lab1  XLXI_9 (.A_in(A_in[3]), 
+                              .B_in(B_in[3]), 
+                              .C_in(XLXN_17), 
+                              .C_out(C_out), 
+                              .S_out(S_out[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module Double_MUSER_Lab1(A_in, 
+                         C_in, 
+                         C_out, 
+                         S_out);
+
+    input [3:0] A_in;
+    input C_in;
+   output C_out;
+   output [3:0] S_out;
+   
+   
+   fulladd4_MUSER_Lab1  XLXI_1 (.A_in(A_in[3:0]), 
+                               .B_in(A_in[3:0]), 
+                               .C_in(C_in), 
+                               .C_out(C_out), 
+                               .S_out(S_out[3:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module Subtract_MUSER_Lab1(A_in, 
+                           B_in, 
+                           C_in, 
+                           C_out, 
+                           S_out);
+
+    input [3:0] A_in;
+    input [3:0] B_in;
+    input C_in;
+   output C_out;
+   output [3:0] S_out;
+   
+   wire [3:0] B_out;
+   wire XLXN_10;
+   
+   fulladd4_MUSER_Lab1  XLXI_1 (.A_in(A_in[3:0]), 
+                               .B_in(B_out[3:0]), 
+                               .C_in(XLXN_10), 
+                               .C_out(C_out), 
+                               .S_out(S_out[3:0]));
+   XOR2  XLXI_5 (.I0(XLXN_10), 
+                .I1(B_in[2]), 
+                .O(B_out[2]));
+   XOR2  XLXI_6 (.I0(XLXN_10), 
+                .I1(B_in[1]), 
+                .O(B_out[1]));
+   XOR2  XLXI_7 (.I0(XLXN_10), 
+                .I1(B_in[0]), 
+                .O(B_out[0]));
+   XOR2  XLXI_19 (.I0(XLXN_10), 
+                 .I1(B_in[3]), 
+                 .O(B_out[3]));
+   INV  XLXI_21 (.I(C_in), 
+                .O(XLXN_10));
+endmodule
+`timescale 1ns / 1ps
+
+module Lab1(A_in, 
+            B_in, 
+            C_in, 
+            S0_in, 
+            S1_in, 
+            C_out_Add, 
+            C_out_Double, 
+            C_out_Subtract, 
+            Lab1_out);
+
+    input [3:0] A_in;
+    input [3:0] B_in;
+    input C_in;
+    input S0_in;
+    input S1_in;
+   output C_out_Add;
+   output C_out_Double;
+   output C_out_Subtract;
+   output [3:0] Lab1_out;
+   
+   wire [3:0] XLXN_28;
+   wire [3:0] XLXN_30;
+   wire [3:0] XLXN_31;
+   wire [3:0] XLXN_44;
+   
+   fulladd4_MUSER_Lab1  XLXI_4 (.A_in(A_in[3:0]), 
+                               .B_in(B_in[3:0]), 
+                               .C_in(C_in), 
+                               .C_out(C_out_Add), 
+                               .S_out(XLXN_31[3:0]));
+   Subtract_MUSER_Lab1  XLXI_11 (.A_in(A_in[3:0]), 
+                                .B_in(B_in[3:0]), 
+                                .C_in(C_in), 
+                                .C_out(C_out_Subtract), 
+                                .S_out(XLXN_44[3:0]));
+   Double_MUSER_Lab1  XLXI_12 (.A_in(A_in[3:0]), 
+                              .C_in(C_in), 
+                              .C_out(C_out_Double), 
+                              .S_out(XLXN_30[3:0]));
+   Mux4bit_MUSER_Lab1  XLXI_13 (.A_in(XLXN_28[3:0]), 
+                               .B_in(XLXN_31[3:0]), 
+                               .C_in(XLXN_44[3:0]), 
+                               .D_in(XLXN_30[3:0]), 
+                               .S0_in(S0_in), 
+                               .S1_in(S1_in), 
+                               .Mux_out(Lab1_out[3:0]));
+   inverter4bit_MUSER_Lab1  XLXI_14 (.A_in(A_in[3:0]), 
+                                    .A_out(XLXN_28[3:0]));
+endmodule

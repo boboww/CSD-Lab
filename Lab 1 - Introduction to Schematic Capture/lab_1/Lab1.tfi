@@ -1,0 +1,17 @@
+// Verilog instantiation template created from schematic C:\Users\Bo\Dropbox\School\Spring 2018\CDA 4203L Computer System Design Lab\Lab 1 - Introduction to Schematic Capture\lab_1\Lab1.sch - Wed Jan 24 15:47:41 2018
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   Lab1 UUT (
+		.B_in(    ), 
+		.S0_in(    ), 
+		.S1_in(    ), 
+		.A_in(    ), 
+		.C_in(    ), 
+		.Lab1_out(    ), 
+		.C_out_Add(    ), 
+		.C_out_Subtract(    ), 
+		.C_out_Double(    )
+   );

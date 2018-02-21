@@ -1,0 +1,13 @@
+// Verilog instantiation template created from schematic C:\Users\Bo\Dropbox\School\Spring 2018\CDA 4203L Computer System Design Lab\Lab 1 - Introduction to Schematic Capture\lab_1\fulladd.sch - Mon Jan 22 18:24:49 2018
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   fulladd UUT (
+		.B_in(    ), 
+		.A_in(    ), 
+		.C_in(    ), 
+		.S_out(    ), 
+		.C_out(    )
+   );
