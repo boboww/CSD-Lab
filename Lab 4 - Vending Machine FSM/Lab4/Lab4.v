@@ -33,6 +33,9 @@ localparam s65 = 0;
 always @(posedge clk) begin
 	case (NextState)
 		s0 : begin
+			GiveSoda = 0;
+			GiveDiet = 0;
+			Change = 0;
 			if (quarter) begin
 				NextState = s25;
 			end if(dime) begin
