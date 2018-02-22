@@ -87,6 +87,48 @@ module Lab4_test;
 		soda = 0;
 		#40;
 		
+				#100;
+		nickel = 1;
+		
+		#10;
+		nickel = 0;
+		#40;
+				
+		#10;
+		quarter = 1;
+		
+		#10;
+		quarter = 0;
+		#40;
+		
+		#10;
+		dime = 1;
+		
+		#10;
+		dime = 0;
+		#40;
+		
+//		#10;
+//		dime = 1;
+//		
+//		#10;
+//		dime = 0;
+//		#40;
+		
+		#10;
+		quarter = 1;
+		
+		#10;
+		quarter = 0;
+		#40;
+		
+		#10;
+		soda = 1;
+		
+		#10;
+		soda = 0;
+		#40;
+		
 //		parameter s0 = 4'b0000;		//0
 //		parameter s5 = 4'b0001;		//1
 //		parameter s10 = 4'b0010;	//2
