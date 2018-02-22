@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Feb 18 17:31:41 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "max_count<0>" LOCATE = SITE "V5" LEVEL 1;
+COMP "max_count<1>" LOCATE = SITE "U4" LEVEL 1;
+COMP "max_count<2>" LOCATE = SITE "V3" LEVEL 1;
+COMP "max_count<3>" LOCATE = SITE "P4" LEVEL 1;
+COMP "digit1<0>" LOCATE = SITE "W3" LEVEL 1;
+COMP "max_count<4>" LOCATE = SITE "R4" LEVEL 1;
+COMP "digit1<1>" LOCATE = SITE "Y4" LEVEL 1;
+COMP "max_count<5>" LOCATE = SITE "P6" LEVEL 1;
+COMP "digit1<2>" LOCATE = SITE "Y1" LEVEL 1;
+COMP "max_count<6>" LOCATE = SITE "P5" LEVEL 1;
+COMP "digit1<3>" LOCATE = SITE "Y3" LEVEL 1;
+COMP "digit2<0>" LOCATE = SITE "AB4" LEVEL 1;
+COMP "digit2<1>" LOCATE = SITE "W1" LEVEL 1;
+COMP "digit2<2>" LOCATE = SITE "AB3" LEVEL 1;
+COMP "digit2<3>" LOCATE = SITE "AA4" LEVEL 1;
+COMP "CLK" LOCATE = SITE "D11" LEVEL 1;
+COMP "run" LOCATE = SITE "P8" LEVEL 1;
+SCHEMATIC END;
+

@@ -43,6 +43,10 @@
     <transform xil_pn:end_ts="1519258293" xil_pn:in_ck="1744175764717689549" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1519258293">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Lab4.v"/>
       <outfile xil_pn:name="Lab4_test.v"/>
     </transform>
