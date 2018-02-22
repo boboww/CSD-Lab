@@ -12,6 +12,8 @@ module Lab4_test;
 	wire GiveSoda;
 	wire GiveDiet;
 	wire Change;
+	wire [3:0] curr;
+	wire [3:0] next;
 
 	// Instantiate the Unit Under Test (UUT)
 	Lab4 uut (
@@ -23,7 +25,9 @@ module Lab4_test;
 		.clk(clk), 
 		.GiveSoda(GiveSoda), 
 		.GiveDiet(GiveDiet), 
-		.Change(Change)
+		.Change(Change),
+		.curr(curr),
+		.next(next)
 	);
 	
 	always begin
@@ -44,40 +48,52 @@ module Lab4_test;
 		#100;
 		nickel = 1;
 		
-		#50;
+		#10;
 		nickel = 0;
-		
-		#50;
+		#40;
+				
+		#10;
 		quarter = 1;
 		
-		#50;
+		#10;
 		quarter = 0;
+		#40;
 		
-		#50;
+		#10;
 		dime = 1;
 		
-		#50;
+		#10;
 		dime = 0;
+		#40;
 		
-		#50;
+		#10;
 		quarter = 1;
 		
-		#50;
+		#10;
 		quarter = 0;
+		#40;
 		
-		#50;
+		#10;
 		soda = 1;
 		
-		#50;
+		#10;
 		soda = 0;
+		#40;
 		
-		#50;
-		
-		#50;
-		
-		#50;
-		
-		#50;
+//		parameter s0 = 4'b0000;		//0
+//		parameter s5 = 4'b0001;		//1
+//		parameter s10 = 4'b0010;	//2
+//		parameter s15 = 4'b0011;	//3
+//		parameter s20 = 4'b0100;	//4
+//		parameter s25 = 4'b0101;	//5
+//		parameter s30 = 4'b0110;	//6
+//		parameter s35 = 4'b0111;	//7
+//		parameter s40 = 4'b1000;	//8
+//		parameter s45 = 4'b1001;	//9
+//		parameter s50 = 4'b1010;	//10
+//		parameter s55 = 4'b1011;	//11
+//		parameter s60 = 4'b1100;	//12
+//		parameter s65 = 4'b1101;	//13
 
 	end
       

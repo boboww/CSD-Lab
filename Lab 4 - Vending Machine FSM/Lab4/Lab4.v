@@ -7,41 +7,49 @@ module Lab4(
 	input clk,
 	output reg GiveSoda,
 	output reg GiveDiet,
-	output reg Change
+	output reg Change,
+	output reg [3:0] next,
+	output reg [3:0] curr
 	);
 	
-reg [2:0] CurrentState;
-reg [2:0] NextState;
+reg [3:0] CurrentState;
+reg [3:0] NextState;
 
 integer i = 1;
 
-parameter s0 = 0;
-parameter s5 = 0;
-parameter s10 = 0;
-parameter s15 = 0;
-parameter s20 = 0;
-parameter s25 = 0;
-parameter s30 = 0;
-parameter s35 = 0;
-parameter s40 = 0;
-parameter s45 = 0;
-parameter s50 = 0;
-parameter s55 = 0;
-parameter s60 = 0;
-parameter s65 = 0;
+parameter s0 = 4'b0000;		//0
+parameter s5 = 4'b0001;		//1
+parameter s10 = 4'b0010;	//2
+parameter s15 = 4'b0011;	//3
+parameter s20 = 4'b0100;	//4
+parameter s25 = 4'b0101;	//5
+parameter s30 = 4'b0110;	//6
+parameter s35 = 4'b0111;	//7
+parameter s40 = 4'b1000;	//8
+parameter s45 = 4'b1001;	//9
+parameter s50 = 4'b1010;	//10
+parameter s55 = 4'b1011;	//11
+parameter s60 = 4'b1100;	//12
+parameter s65 = 4'b1101;	//13
 
 always @(posedge clk) begin
+	curr = CurrentState;
 	CurrentState <= NextState;
+	next = NextState;
+end
+
+always @(negedge clk) begin
+	Change = 0;
 end
 
 always @(*) begin
 	NextState = CurrentState;
 	GiveSoda = 0;
 	GiveDiet = 0;
-	Change = 0;
-	
+	Change = 0;	
+
 	if(i == 1) begin
-		NextState = s0;
+		CurrentState = s0;
 		i = 0;
 	end	
 	
@@ -53,8 +61,7 @@ always @(*) begin
 				NextState = s10;
 			end if(nickel) begin
 				NextState = s5;
-			end else 
-				NextState = 0;
+			end 
 		end
 			
 		s5 : begin
