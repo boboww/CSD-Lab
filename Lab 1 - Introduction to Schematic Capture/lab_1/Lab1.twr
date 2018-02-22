@@ -1,0 +1,102 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Lab1.twx Lab1.ncd -o Lab1.twr Lab1.pcf
+
+Design file:              Lab1.ncd
+Physical constraint file: Lab1.pcf
+Device,package,speed:     xc6slx45,csg324,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A_in<0>        |C_out_Add      |    8.607|
+A_in<0>        |C_out_Subtract |    9.522|
+A_in<0>        |Lab1_out<0>    |    7.620|
+A_in<0>        |Lab1_out<1>    |    8.789|
+A_in<0>        |Lab1_out<2>    |    9.271|
+A_in<0>        |Lab1_out<3>    |   10.371|
+A_in<1>        |C_out_Add      |    8.570|
+A_in<1>        |C_out_Subtract |    9.381|
+A_in<1>        |Lab1_out<1>    |    8.657|
+A_in<1>        |Lab1_out<2>    |    9.234|
+A_in<1>        |Lab1_out<3>    |   10.230|
+A_in<2>        |C_out_Add      |    8.240|
+A_in<2>        |C_out_Subtract |    7.566|
+A_in<2>        |Lab1_out<2>    |    8.564|
+A_in<2>        |Lab1_out<3>    |    9.241|
+A_in<3>        |C_out_Add      |    7.613|
+A_in<3>        |C_out_Double   |    5.599|
+A_in<3>        |C_out_Subtract |    7.044|
+A_in<3>        |Lab1_out<3>    |    8.022|
+B_in<0>        |C_out_Add      |    8.298|
+B_in<0>        |C_out_Subtract |    9.743|
+B_in<0>        |Lab1_out<0>    |    7.316|
+B_in<0>        |Lab1_out<1>    |    9.010|
+B_in<0>        |Lab1_out<2>    |    9.286|
+B_in<0>        |Lab1_out<3>    |   10.592|
+B_in<1>        |C_out_Add      |    7.635|
+B_in<1>        |C_out_Subtract |    9.626|
+B_in<1>        |Lab1_out<1>    |    8.301|
+B_in<1>        |Lab1_out<2>    |    9.169|
+B_in<1>        |Lab1_out<3>    |   10.475|
+B_in<2>        |C_out_Add      |    7.916|
+B_in<2>        |C_out_Subtract |    8.661|
+B_in<2>        |Lab1_out<2>    |    8.940|
+B_in<2>        |Lab1_out<3>    |    9.510|
+B_in<3>        |C_out_Add      |    7.464|
+B_in<3>        |C_out_Subtract |    7.600|
+B_in<3>        |Lab1_out<3>    |    8.219|
+C_in           |C_out_Add      |    8.548|
+C_in           |C_out_Subtract |   10.194|
+C_in           |Lab1_out<0>    |    7.767|
+C_in           |Lab1_out<1>    |    9.461|
+C_in           |Lab1_out<2>    |    9.737|
+C_in           |Lab1_out<3>    |   11.043|
+S0_in          |Lab1_out<0>    |    6.766|
+S0_in          |Lab1_out<1>    |    6.908|
+S0_in          |Lab1_out<2>    |    7.349|
+S0_in          |Lab1_out<3>    |    6.540|
+S1_in          |Lab1_out<0>    |    6.660|
+S1_in          |Lab1_out<1>    |    6.983|
+S1_in          |Lab1_out<2>    |    7.175|
+S1_in          |Lab1_out<3>    |    6.548|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Jan 24 15:46:36 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 330 MB
+
+
+

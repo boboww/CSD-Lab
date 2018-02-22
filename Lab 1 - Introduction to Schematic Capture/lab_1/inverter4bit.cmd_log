@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -refsym inverter4bit {C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/Lab 1 - Introduction to Schematic Capture/lab_1/inverter4bit.sch} {C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/Lab 1 - Introduction to Schematic Capture/lab_1/inverter4bit.sym} 
+sch2hdl -intstyle ise -family spartan6 -verilog inverter4bit_drc.vf -w {C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/Lab 1 - Introduction to Schematic Capture/lab_1/inverter4bit.sch} 

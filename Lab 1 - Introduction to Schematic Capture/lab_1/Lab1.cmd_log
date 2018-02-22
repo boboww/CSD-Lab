@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/Lab 1 - Introduction to Schematic Capture/lab_1/Lab1.xst" -ofn "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/Lab 1 - Introduction to Schematic Capture/lab_1/Lab1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 "Lab1.ngc" Lab1.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab1_map.ncd Lab1.ngd Lab1.pcf 
+par -w -intstyle ise -ol high -mt off Lab1_map.ncd Lab1.ncd Lab1.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab1.twx Lab1.ncd -o Lab1.twr Lab1.pcf 
+bitgen -intstyle ise -f Lab1.ut Lab1.ncd 
+sch2verilog -intstyle ise -family spartan6 -tionly {} -tiext tfi -w {C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/Lab 1 - Introduction to Schematic Capture/lab_1/Lab1.sch} Lab1.tfi 
+sch2hdl -intstyle ise -family spartan6 -verilog Lab1_drc.vf -w {C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/Lab 1 - Introduction to Schematic Capture/lab_1/Lab1.sch} 

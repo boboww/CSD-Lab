@@ -1,0 +1,3 @@
+verilog isim_temp "lab3final.v"
+verilog isim_temp "lab3final_testbench.v"
+verilog isim_temp "D:/ProgramFilesWIN10/14.7/ISE_DS/ISE//verilog/src/glbl.v"

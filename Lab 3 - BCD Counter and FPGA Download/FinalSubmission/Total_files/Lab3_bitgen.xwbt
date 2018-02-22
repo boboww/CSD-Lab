@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Warren\Documents\_School\Computer System\Labs\Project3FINAL\Lab3.ncd
+OUTFILE=C:\Users\Warren\Documents\_School\Computer System\Labs\Project3FINAL\Lab3.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg484
+WORKINGDIR=C:\Users\Warren\Documents\_School\Computer System\Labs\Project3FINAL
+LICENSE=WebPack
+USER_INFO=211472187_0_0_317

@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : fulladd.vf
+// /___/   /\     Timestamp : 01/24/2018 15:53:05
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/Lab 1 - Introduction to Schematic Capture/lab_1/fulladd.vf" -w "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/Lab 1 - Introduction to Schematic Capture/lab_1/fulladd.sch"
+//Design Name: fulladd
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module fulladd(A_in, 
+               B_in, 
+               C_in, 
+               C_out, 
+               S_out);
+
+    input A_in;
+    input B_in;
+    input C_in;
+   output C_out;
+   output S_out;
+   
+   wire XLXN_1;
+   wire XLXN_12;
+   wire XLXN_13;
+   
+   AND2  XLXI_1 (.I0(C_in), 
+                .I1(XLXN_1), 
+                .O(XLXN_12));
+   AND2  XLXI_2 (.I0(B_in), 
+                .I1(A_in), 
+                .O(XLXN_13));
+   OR2  XLXI_3 (.I0(XLXN_13), 
+               .I1(XLXN_12), 
+               .O(C_out));
+   XOR2  XLXI_4 (.I0(C_in), 
+                .I1(XLXN_1), 
+                .O(S_out));
+   XOR2  XLXI_5 (.I0(B_in), 
+                .I1(A_in), 
+                .O(XLXN_1));
+endmodule

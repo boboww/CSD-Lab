@@ -1,0 +1,15 @@
+// Verilog instantiation template created from schematic C:\Users\Bo\Dropbox\School\Spring 2018\CDA 4203L Computer System Design Lab\Lab 1 - Introduction to Schematic Capture\lab_1\Mux4to1.sch - Mon Jan 22 17:51:46 2018
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   Mux4to1 UUT (
+		.A_in(    ), 
+		.B_in(    ), 
+		.C_in(    ), 
+		.D_in(    ), 
+		.S0(    ), 
+		.S1(    ), 
+		.Mux_out(    )
+   );

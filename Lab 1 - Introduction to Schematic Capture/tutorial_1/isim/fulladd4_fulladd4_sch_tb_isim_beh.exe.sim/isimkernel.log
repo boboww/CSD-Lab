@@ -1,0 +1,29 @@
+Command line:
+   fulladd4_fulladd4_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  62759
+
+Mon Jan 22 15:34:41 2018
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 876.593 Meg
+
+ Total Signals          : 115
+ Total Nets             : 42
+ Total Signal Drivers   : 28
+ Total Blocks           : 27
+ Total Primitive Blocks : 21
+ Total Processes        : 30
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 131
+Total Line Count : 27
+
+ Total Simulation Time: 0.046875 sec
+
+ Current Memory Usage: 876.593 Meg
+
+Mon Jan 22 15:34:48 2018
+
