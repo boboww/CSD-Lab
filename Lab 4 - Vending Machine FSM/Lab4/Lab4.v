@@ -36,6 +36,10 @@ always @(posedge clk) begin
 	curr = CurrentState;
 	CurrentState <= NextState;
 	next = NextState;
+	if(CurrentState == s45 || i == 1) begin
+		NextState = s0;
+		i = 0;
+	end
 end
 
 always @(negedge clk) begin
@@ -47,11 +51,6 @@ always @(*) begin
 	GiveSoda = 0;
 	GiveDiet = 0;
 	Change = 0;	
-
-	if(i == 1) begin
-		CurrentState = s0;
-		i = 0;
-	end	
 	
 	case (CurrentState)
 		s0 : begin
@@ -145,7 +144,6 @@ always @(*) begin
 		end
 			
 		s45 : begin
-			NextState = s0;
 			if (soda) begin
 				GiveSoda = 1;
 			end if (diet) begin
