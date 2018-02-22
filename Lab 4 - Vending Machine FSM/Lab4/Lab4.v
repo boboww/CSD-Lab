@@ -145,6 +145,7 @@ always @(*) begin
 		end
 			
 		s45 : begin
+			NextState = s0;
 			if (soda) begin
 				GiveSoda = 1;
 			end if (diet) begin
