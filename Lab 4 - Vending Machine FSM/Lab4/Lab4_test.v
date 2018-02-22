@@ -66,6 +66,13 @@ module Lab4_test;
 		dime = 0;
 		#40;
 		
+//		#10;
+//		dime = 1;
+//		
+//		#10;
+//		dime = 0;
+//		#40;
+		
 		#10;
 		quarter = 1;
 		
