@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Warren/Desktop/Lab4 TESTBENCH WORKING_FINAL/Lab4 COMPLETELY WORKING - Copy (2)/Lab4/Lab4_test_isim_beh.exe" -prj "C:/Users/Warren/Desktop/Lab4 TESTBENCH WORKING_FINAL/Lab4 COMPLETELY WORKING - Copy (2)/Lab4/Lab4_test_beh.prj" "work.Lab4_test" "work.glbl" 
