@@ -1,0 +1,8 @@
+verilog work "subtractor_4bit.v"
+verilog work "register_4bit.v"
+verilog work "notequal_4bit.v"
+verilog work "mux_2to1_4bit.v"
+verilog work "lessthan_4bit.v"
+verilog work "Lab5.v"
+verilog work "Lab5_test.v"
+verilog work "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

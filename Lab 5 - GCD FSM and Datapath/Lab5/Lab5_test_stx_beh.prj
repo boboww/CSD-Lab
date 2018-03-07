@@ -1,0 +1,8 @@
+verilog isim_temp "subtractor_4bit.v"
+verilog isim_temp "register_4bit.v"
+verilog isim_temp "notequal_4bit.v"
+verilog isim_temp "mux_2to1_4bit.v"
+verilog isim_temp "lessthan_4bit.v"
+verilog isim_temp "Lab5.v"
+verilog isim_temp "Lab5_test.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
