@@ -1,7 +1,0 @@
-Exception at PC 0x0000000000401BED
-Attemped to read address 0x0000000037129598
-Printing stacktrace...
-
-[0]  [0x0x0000000000401bed]
-[1]  [0x0x0000000000401bed]
-Done

@@ -17,22 +17,15 @@ reg [3:0] CurrentState;
 reg [3:0] NextState;
 reg [3:0] TempState;
 
+reg[24:0] count = 0;	//clock divider counter
 
-
-	reg[24:0] count = 0;	//clock divider counter
-	
-	always @(posedge clk)
-		begin
-		
-			count <= count + 1;
-			if(count ==1)															//FOR WORKING ON THE BOARD THIS SHOULD BE  10000000  FOR WAVEFORM IT SHOULD BE 1
-				begin
-					count <=0;
-					divided_clk <= !divided_clk;
-				end	
-		end
-		
-		
+always @(posedge clk) begin
+	count <= count + 1;
+		if(count ==1) begin					//FOR WORKING ON THE BOARD THIS SHOULD BE  10000000  FOR WAVEFORM IT SHOULD BE 1
+			count <=0;
+			divided_clk <= !divided_clk;
+		end	
+end		
 
 integer i = 1;
 
@@ -60,9 +53,6 @@ debounce debounce_nickel(.clk(clk), .noisy(nickel_in), .clean(nickel));
 debounce debounce_dime(.clk(clk), .noisy(dime_in), .clean(dime));
 debounce debounce_soda(.clk(clk), .noisy(soda_in), .clean(soda));
 debounce debounce_diet(.clk(clk), .noisy(diet_in), .clean(diet));
-
-
-
 
 always @(*)
 	begin

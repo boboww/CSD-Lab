@@ -1,33 +1,30 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5_test_isim_beh.exe -prj C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5_test_beh.prj work.Lab5_test work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5_test_isim_beh.exe -prj C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5_test_beh.prj Lab5_test work.glbl 
 ISim P.20131013 (signature 0x7708f090)
-Number of CPUs detected in this system: 4
-Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
 Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/subtractor_4bit.v" into library work
-WARNING:HDLCompiler:329 - "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/subtractor_4bit.v" Line 7: Target <S_out> of concurrent assignment or output port connection should be a net type.
 Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/register_4bit.v" into library work
 Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/notequal_4bit.v" into library work
 Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/mux_2to1_4bit.v" into library work
 Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/lessthan_4bit.v" into library work
 Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5.v" into library work
+Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5_seq.v" into library work
 Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5_test.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:329 - "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5.v" Line 34: Target <GCD_out> of concurrent assignment or output port connection should be a net type.
-WARNING:HDLCompiler:189 - "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5.v" Line 34: Size mismatch in connection of port <R_in>. Formal port size is 4-bit while actual signal size is 1-bit.
-WARNING:HDLCompiler:329 - "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/subtractor_4bit.v" Line 7: Target <S_out> of concurrent assignment or output port connection should be a net type.
 Completed static elaboration
-Compiling module lessthan_4bit
 Compiling module notequal_4bit
-Compiling module subtractor_4bit
+Compiling module lessthan_4bit
 Compiling module mux_2to1_4bit
 Compiling module register_4bit
+Compiling module subtractor_4bit
 Compiling module Lab5
+Compiling module Lab5_seq
 Compiling module Lab5_test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 8 Verilog Units
+Compiled 9 Verilog Units
 Built simulation executable C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5_test_isim_beh.exe
-Fuse Memory Usage: 26960 KB
-Fuse CPU Usage: 577 ms
+Fuse Memory Usage: 27872 KB
+Fuse CPU Usage: 328 ms

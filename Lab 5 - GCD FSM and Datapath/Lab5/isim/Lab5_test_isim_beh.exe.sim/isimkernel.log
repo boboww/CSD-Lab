@@ -2,29 +2,28 @@ Command line:
    Lab5_test_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  58124
+     -socket  24510
 
-Wed Mar 07 16:29:54 2018
+Sun Mar 18 23:40:49 2018
 
 
- Elaboration Time: 0.0625 sec
+ Elaboration Time: 0.015625 sec
 
- Current Memory Usage: 880.57 Meg
+ Current Memory Usage: 1038.53 Meg
 
- Total Signals          : 56
- Total Nets             : 64
- Total Signal Drivers   : 24
- Total Blocks           : 12
+ Total Signals          : 88
+ Total Nets             : 86
+ Total Signal Drivers   : 36
+ Total Blocks           : 13
  Total Primitive Blocks : 10
- Total Processes        : 36
- Total Traceable Variables  : 50
- Total Scalar Nets and Variables : 248
-In process subtractor_4bit.vCont_7_0 
- FATAL ERROR:ISim: This application has discovered an exceptional condition from which it cannot recover. Process will terminate. To search for possible resolutions to this issue, refer to the Xilinx answer database by going to http://www.xilinx.com/support/answers/index.htm and search with keywords 'ISim' and 'FATAL ERROR'. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+ Total Processes        : 43
+ Total Traceable Variables  : 57
+ Total Scalar Nets and Variables : 277
+Total Line Count : 123
 
- Total Simulation Time: 0.5 sec
+ Total Simulation Time: 0.015625 sec
 
- Current Memory Usage: 916.038 Meg
+ Current Memory Usage: 1038.53 Meg
 
-Wed Mar 07 16:30:01 2018
+Sun Mar 18 23:40:52 2018
 
