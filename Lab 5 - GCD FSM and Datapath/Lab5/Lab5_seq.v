@@ -1,11 +1,11 @@
 module Lab5_seq(Start, X_in, Y_in, reset, GCD_out, Done, clk, curr, xneqy, xlty, ysel, yld, xsel, xld, xval, yval, xmux, ymux);
-    input [0:0] Start;
+    input Start;
     input [3:0] X_in;
     input [3:0] Y_in;
-    input [0:0] reset;
+    input reset;
     output [3:0] GCD_out;
-    output reg [0:0] Done;
-    input [0:0] clk;
+    output reg Done;
+    input clk;
 	 output reg [3:0] curr;
 	 output reg xneqy;
 	 output reg xlty;
@@ -18,11 +18,11 @@ module Lab5_seq(Start, X_in, Y_in, reset, GCD_out, Done, clk, curr, xneqy, xlty,
 	 output reg [3:0] xmux;
 	 output reg [3:0] ymux;
 	 
-	 reg [0:0] x_ld;
-	 reg [0:0] y_ld;
-	 reg [0:0] x_sel;
-	 reg [0:0] y_sel;
-	 reg [0:0] d_ld;
+	 reg x_ld;
+	 reg y_ld;
+	 reg x_sel;
+	 reg y_sel;
+	 reg d_ld;
 	 reg [3:0] CurrentState = s0;
 	
 	 wire [3:0] x_val;
@@ -106,10 +106,10 @@ always @(posedge clk) begin
 		end
 		
 		s5: begin
-			x_ld <= 0;
-			y_ld <= 0;
-			//x_sel <= 0;
-			//y_sel <= 0;
+			x_ld<=0;
+			y_ld<=0;
+			x_sel<=0;
+			y_sel<=0;
 			if(x_neq_y) begin
 				CurrentState <= s6;
 			end else begin

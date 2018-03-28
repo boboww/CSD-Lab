@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Mar 19 18:12:00 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "GCD_out<3>" LOCATE = SITE "Y3" LEVEL 1;
+COMP "clk" LOCATE = SITE "D11" LEVEL 1;
+COMP "Done" LOCATE = SITE "R7" LEVEL 1;
+COMP "X_in<0>" LOCATE = SITE "R4" LEVEL 1;
+COMP "X_in<1>" LOCATE = SITE "P6" LEVEL 1;
+COMP "X_in<2>" LOCATE = SITE "P5" LEVEL 1;
+COMP "X_in<3>" LOCATE = SITE "P8" LEVEL 1;
+COMP "Start" LOCATE = SITE "E6" LEVEL 1;
+COMP "reset" LOCATE = SITE "AB9" LEVEL 1;
+COMP "Y_in<0>" LOCATE = SITE "V5" LEVEL 1;
+COMP "Y_in<1>" LOCATE = SITE "U4" LEVEL 1;
+COMP "Y_in<2>" LOCATE = SITE "V3" LEVEL 1;
+COMP "Y_in<3>" LOCATE = SITE "P4" LEVEL 1;
+COMP "GCD_out<0>" LOCATE = SITE "W3" LEVEL 1;
+COMP "GCD_out<1>" LOCATE = SITE "Y4" LEVEL 1;
+COMP "GCD_out<2>" LOCATE = SITE "Y1" LEVEL 1;
+SCHEMATIC END;
+

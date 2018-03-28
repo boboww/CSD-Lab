@@ -19,7 +19,10 @@ module Lab5(
 	
 	wire [3:0] x_sub_y;
 	wire [3:0] y_sub_x;
-		 
+
+	
+	
+	
 	notequal_4bit Neq(x_val, y_val, x_neq_y);
 	lessthan_4bit Less(x_val, y_val, x_lt_y);	
 	

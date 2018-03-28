@@ -1,0 +1,33 @@
+xst -intstyle ise -ifn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.xst" -ofn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.syr" 
+xst -intstyle ise -ifn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.xst" -ofn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.syr" 
+xst -intstyle ise -ifn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.xst" -ofn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.syr" 
+xst -intstyle ise -ifn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.xst" -ofn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.syr" 
+xst -intstyle ise -ifn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.xst" -ofn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PIN_MAP.ucf -p xc6slx45-csg484-3 Lab5_seq.ngc Lab5_seq.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PIN_MAP.ucf -p xc6slx45-csg484-3 Lab5_seq.ngc Lab5_seq.ngd  
+xst -intstyle ise -ifn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.xst" -ofn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PIN_MAP.ucf -p xc6slx45-csg484-3 Lab5_seq.ngc Lab5_seq.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PIN_MAP.ucf -p xc6slx45-csg484-3 Lab5_seq.ngc Lab5_seq.ngd  
+xst -intstyle ise -ifn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.xst" -ofn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PIN_MAP.ucf -p xc6slx45-csg484-3 Lab5_seq.ngc Lab5_seq.ngd  
+xst -intstyle ise -ifn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.xst" -ofn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PIN_MAP.ucf -p xc6slx45-csg484-3 Lab5_seq.ngc Lab5_seq.ngd  
+xst -intstyle ise -ifn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.xst" -ofn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PIN_MAP.ucf -p xc6slx45-csg484-3 Lab5_seq.ngc Lab5_seq.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab5_seq_map.ncd Lab5_seq.ngd Lab5_seq.pcf 
+par -w -intstyle ise -ol high -mt off Lab5_seq_map.ncd Lab5_seq.ncd Lab5_seq.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab5_seq.twx Lab5_seq.ncd -o Lab5_seq.twr Lab5_seq.pcf -ucf PIN_MAP.ucf 
+bitgen -intstyle ise -f Lab5_seq.ut Lab5_seq.ncd 
+xst -intstyle ise -ifn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.xst" -ofn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.syr" 
+xst -intstyle ise -ifn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.xst" -ofn "C:/Users/Warren/Desktop/Lab5_tosubmit/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PIN_MAP.ucf -p xc6slx45-csg484-3 Lab5_seq.ngc Lab5_seq.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab5_seq_map.ncd Lab5_seq.ngd Lab5_seq.pcf 
+par -w -intstyle ise -ol high -mt off Lab5_seq_map.ncd Lab5_seq.ncd Lab5_seq.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab5_seq.twx Lab5_seq.ncd -o Lab5_seq.twr Lab5_seq.pcf -ucf PIN_MAP.ucf 
+bitgen -intstyle ise -f Lab5_seq.ut Lab5_seq.ncd 
+xst -intstyle ise -ifn "C:/Users/Warren/Desktop/Lab5_tosubmit - Copy/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.xst" -ofn "C:/Users/Warren/Desktop/Lab5_tosubmit - Copy/Lab5_tosubmit/TestBench_AllFiles/Lab5_seq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PIN_MAP.ucf -p xc6slx45-csg484-3 "Lab5_seq.ngc" Lab5_seq.ngd  
+map -intstyle ise -p xc6slx45-csg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab5_seq_map.ncd Lab5_seq.ngd Lab5_seq.pcf 
+par -w -intstyle ise -ol high -mt off Lab5_seq_map.ncd Lab5_seq.ncd Lab5_seq.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab5_seq.twx Lab5_seq.ncd -o Lab5_seq.twr Lab5_seq.pcf -ucf PIN_MAP.ucf 
+bitgen -intstyle ise -f Lab5_seq.ut Lab5_seq.ncd 

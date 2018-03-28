@@ -1,15 +1,15 @@
 module Lab5_test;
 
 	// Inputs
-	reg [0:0] Start;
+	reg Start;
 	reg [3:0] X_in;
 	reg [3:0] Y_in;
-	reg [0:0] reset;
-	reg [0:0] clk;
+	reg reset;
+	reg clk;
 
 	// Outputs
 	wire [3:0] GCD_out;
-	wire [0:0] Done;
+	wire Done;
 	wire [3:0] curr;
 	wire [3:0] xval;
 	wire [3:0] yval;
@@ -45,17 +45,17 @@ always begin
 
 	initial begin
 		// Initialize Inputs
-		Start = 0;
-		X_in = 0;
-		Y_in = 0;
+		Start =;
+		X_in =;
+		Y_in =;
 		reset = 1;
-		clk = 0;
+		clk =;
 
 		// Wait 100 ns for global reset to finish
 		#100;		
-		reset = 0;		
+		reset =;		
 		X_in = 12;
-		Y_in = 8;
+		Y_in = 9;
 		
 		#10;
 		Start = 1;		
