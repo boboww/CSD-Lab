@@ -25,7 +25,7 @@ static const char *ng0 = "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Compu
 static int ng1[] = {0, 0};
 static int ng2[] = {1, 0};
 static int ng3[] = {12, 0};
-static int ng4[] = {9, 0};
+static int ng4[] = {8, 0};
 
 
 

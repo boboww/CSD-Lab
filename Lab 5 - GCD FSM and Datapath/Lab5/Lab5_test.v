@@ -55,7 +55,7 @@ always begin
 		#100;		
 		reset = 0;		
 		X_in = 12;
-		Y_in = 9;
+		Y_in = 8;
 		
 		#10;
 		Start = 1;		

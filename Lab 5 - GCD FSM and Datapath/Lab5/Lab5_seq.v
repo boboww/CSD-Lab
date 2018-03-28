@@ -106,10 +106,10 @@ always @(posedge clk) begin
 		end
 		
 		s5: begin
-			x_ld=0;
-			y_ld=0;
-			x_sel=0;
-			y_sel=0;
+			x_ld <= 0;
+			y_ld <= 0;
+			//x_sel <= 0;
+			//y_sel <= 0;
 			if(x_neq_y) begin
 				CurrentState <= s6;
 			end else begin
@@ -151,7 +151,7 @@ always @(posedge clk) begin
 		end
 		
 		s12: begin
-			Done = 1;
+			Done <= 1;
 			CurrentState <= s0;
 		end
 	
