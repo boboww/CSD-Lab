@@ -1,0 +1,26 @@
+# 100 MHz Clock
+NET clk	LOC=D11;
+
+# Switches
+NET "Y_in[0]" LOC = V5;  # 0
+NET "Y_in[1]" LOC = U4;  # 1
+NET "Y_in[2]" LOC = V3;  # 2
+NET "Y_in[3]" LOC = P4;  # 3
+NET "X_in[0]" LOC = R4;  # 4
+NET "X_in[1]" LOC = P6;   # 5
+NET "X_in[2]" LOC = P5;   # 6
+NET "X_in[3]" LOC = P8;   # 7
+
+NET "Start" LOC = E6;  # center
+
+NET "reset" LOC = AB9;
+
+
+# LED Bank
+NET "GCD_out[0]" LOC = W3;
+NET "GCD_out[1]" LOC = Y4;
+NET "GCD_out[2]" LOC = Y1;
+NET "GCD_out[3]" LOC = Y3;
+
+
+NET "Done" LOC="R7";

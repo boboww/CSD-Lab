@@ -1,0 +1,16 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 6 - Loopback System using PicoBlaze/Lab6/loopback_isim_beh.exe -prj C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 6 - Loopback System using PicoBlaze/Lab6/loopback_beh.prj work.loopback work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 6 - Loopback System using PicoBlaze/Lab6/uart_tx6.v" into library work
+Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 6 - Loopback System using PicoBlaze/Lab6/uart_rx6.v" into library work
+Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 6 - Loopback System using PicoBlaze/Lab6/kcpsm6.v" into library work
+Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 6 - Loopback System using PicoBlaze/Lab6/rs232_uart.v" into library work
+Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 6 - Loopback System using PicoBlaze/Lab6/picoblaze.v" into library work
+Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 6 - Loopback System using PicoBlaze/Lab6/led_driver.v" into library work
+Analyzing Verilog file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 6 - Loopback System using PicoBlaze/Lab6/loopback.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+ERROR:HDLCompiler:1654 - "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 6 - Loopback System using PicoBlaze/Lab6/picoblaze.v" Line 66: Instantiating <pblaze_rom> from unknown module <program>
+ERROR:Simulator:778 - Static elaboration of top level Verilog design unit(s) in library work failed

@@ -1,0 +1,192 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc PIN_MAP.ucf -bm Lab5_test.bmm -p
+xc6slx45-csg484-3 Lab5_test.ngc Lab5_test.ngd
+
+Reading NGO file "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer
+System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5_test.ngc" ...
+Loading design module "C:\Users\Bo\Dropbox\School\Spring 2018\CDA 4203L Computer
+System Design Lab\CSD-Lab\Lab 5 - GCD FSM and Datapath\Lab5/Lab5_test.ngc"...
+WARNING:NgdBuild:578 - Design contains no instances.
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "PIN_MAP.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET CLK	LOC=D11;> [PIN_MAP.ucf(2)]: NET
+   "CLK" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET CLK	LOC=D11;> [PIN_MAP.ucf(2)]' could not be found and so the Locate
+   constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "switch_y[0]" LOC = V5;>
+   [PIN_MAP.ucf(5)]: NET "switch_y[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switch_y[0]" LOC = V5;> [PIN_MAP.ucf(5)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "switch_y[1]" LOC = U4;>
+   [PIN_MAP.ucf(6)]: NET "switch_y[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switch_y[1]" LOC = U4;> [PIN_MAP.ucf(6)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "switch_y[2]" LOC = V3;>
+   [PIN_MAP.ucf(7)]: NET "switch_y[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switch_y[2]" LOC = V3;> [PIN_MAP.ucf(7)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "switch_y[3]" LOC = P4;>
+   [PIN_MAP.ucf(8)]: NET "switch_y[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switch_y[3]" LOC = P4;> [PIN_MAP.ucf(8)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "switch_x[0]" LOC = R4;>
+   [PIN_MAP.ucf(9)]: NET "switch_x[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switch_x[0]" LOC = R4;> [PIN_MAP.ucf(9)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "switch_x[1]" LOC = P6;>
+   [PIN_MAP.ucf(10)]: NET "switch_x[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switch_x[1]" LOC = P6;> [PIN_MAP.ucf(10)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "switch_x[2]" LOC = P5;>
+   [PIN_MAP.ucf(11)]: NET "switch_x[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switch_x[2]" LOC = P5;> [PIN_MAP.ucf(11)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "switch_x[3]" LOC = P8;>
+   [PIN_MAP.ucf(12)]: NET "switch_x[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "switch_x[3]" LOC = P8;> [PIN_MAP.ucf(12)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn_start" LOC = E6;>
+   [PIN_MAP.ucf(14)]: NET "btn_start" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "btn_start" LOC = E6;> [PIN_MAP.ucf(14)]' could not be found and so the
+   Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "btn_reset" LOC = AB9;>
+   [PIN_MAP.ucf(16)]: NET "btn_reset" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "btn_reset" LOC = AB9;> [PIN_MAP.ucf(16)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led_gcd[0]" LOC = U18;>
+   [PIN_MAP.ucf(19)]: NET "led_gcd[0]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led_gcd[0]" LOC = U18;> [PIN_MAP.ucf(19)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led_gcd[1]" LOC = M14;>
+   [PIN_MAP.ucf(20)]: NET "led_gcd[1]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led_gcd[1]" LOC = M14;> [PIN_MAP.ucf(20)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led_gcd[2]" LOC = N14;>
+   [PIN_MAP.ucf(21)]: NET "led_gcd[2]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led_gcd[2]" LOC = N14;> [PIN_MAP.ucf(21)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led_gcd[3]" LOC = L14;>
+   [PIN_MAP.ucf(22)]: NET "led_gcd[3]" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led_gcd[3]" LOC = L14;> [PIN_MAP.ucf(22)]' could not be found and so
+   the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "led_done" LOC="R7";>
+   [PIN_MAP.ucf(24)]: NET "led_done" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "led_done" LOC="R7";> [PIN_MAP.ucf(24)]' could not be found and so the
+   Locate constraint will be removed.
+
+Done...
+
+Processing BMM file "Lab5_test.bmm" ...
+
+WARNING::53 - File 'Lab5_test.bmm' is empty or has no BMM content.
+
+
+Checking expanded design ...
+ERROR:NgdBuild:605 - logical root block 'Lab5_test' with type 'Lab5_test' is
+   unexpanded. Symbol 'Lab5_test' is not supported in target 'spartan6'.
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:    17
+  Number of warnings:  17
+
+Total memory usage is 224136 kilobytes
+
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "Lab5_test.bld"...

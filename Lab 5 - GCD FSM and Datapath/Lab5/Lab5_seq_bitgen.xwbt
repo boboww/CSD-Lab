@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Warren\Desktop\Lab5_tosubmit - Copy\Lab5_tosubmit\TestBench_AllFiles\Lab5_seq.ncd
+OUTFILE=C:\Users\Warren\Desktop\Lab5_tosubmit - Copy\Lab5_tosubmit\TestBench_AllFiles\Lab5_seq.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg484
+WORKINGDIR=C:\Users\Warren\Desktop\Lab5_tosubmit - Copy\Lab5_tosubmit\TestBench_AllFiles
+LICENSE=WebPack
+USER_INFO=211472187_0_0_317

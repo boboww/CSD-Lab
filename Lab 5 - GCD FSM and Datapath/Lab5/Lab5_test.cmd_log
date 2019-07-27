@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5_test.xst" -ofn "C:/Users/Bo/Dropbox/School/Spring 2018/CDA 4203L Computer System Design Lab/CSD-Lab/Lab 5 - GCD FSM and Datapath/Lab5/Lab5_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc PIN_MAP.ucf -bm Lab5_test.bmm -p xc6slx45-csg484-3 "Lab5_test.ngc" Lab5_test.ngd  
