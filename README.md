@@ -1,4 +1,4 @@
-# CSD-Lab
+# Computer System Design
 Computer System Design Projects
 
 Work in your own branch or else errors may occur
